@@ -90,7 +90,7 @@
     </nav>
     <main>
         <h2>Contact Us</h2>
-        <form action="#" method="post">
+        <form id="contact-form" onsubmit="sendMessage(event)">
             <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -104,9 +104,7 @@
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
             <button type="submit">Send</button>
-            
         </form>
-        <p>We will reach back to you on your given email address as soon as we can.</p>
     </main>
 </body>
 </html>
