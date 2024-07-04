@@ -68,6 +68,13 @@
             bottom: 0;
         }
     </style>
+        <script>
+        function sendMessage(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Message sent");
+            document.getElementById("contact-form").reset(); // Optional: Reset the form
+        }
+    </script>
 </head>
 <body>
     <header>
