@@ -68,13 +68,6 @@
             bottom: 0;
         }
     </style>
-        <script>
-        function sendMessage(event) {
-            event.preventDefault(); // Prevent form submission
-            alert("Message sent");
-            document.getElementById("contact-form").reset(); // Optional: Reset the form
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -90,7 +83,7 @@
     </nav>
     <main>
         <h2>Contact Us</h2>
-        <form id="contact-form" onsubmit="sendMessage(event)">
+        <form action="thankyou.html" method="get">
             <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -106,5 +99,8 @@
             <button type="submit">Send</button>
         </form>
     </main>
+    <footer>
+        <p>&copy; 2024 Happy Tails Animal Adoption and Care Center</p>
+    </footer>
 </body>
 </html>
